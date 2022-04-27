@@ -1,6 +1,6 @@
 secure.properties
 
-*.sql
+mentees_jaws.sql
 *.mwb
 *.bak
 
