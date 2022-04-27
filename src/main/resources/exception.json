@@ -1,0 +1,17 @@
+[
+	{
+		"status": "403",
+		"code": "Forbidden",
+		"message": "잘못된 접근입니다."
+	},
+	{
+		"status": "404",
+		"code": "Not Found",
+		"message": "찾을 수 없는 페이지 입니다."
+	},
+	{
+		"status": "500",
+		"code": "Internal Server Error",
+		"message": "서버에서 오류가 발생했습니다."
+	}
+]

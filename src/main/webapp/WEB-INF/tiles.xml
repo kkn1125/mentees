@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+  <definition name="baseTemplate" template="/WEB-INF/views/inc/layout.jsp">
+    <put-attribute name="title" value="Home" />
+    <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/inc/footer.jsp" />
+  </definition>
+  
+  <definition name="root.*" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/views/{1}.jsp" />
+  </definition>
+  
+  <definition name="secu.*" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/views/secu/{1}.jsp" />
+  </definition>
+  
+  <definition name="mentees.*" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/views/mentees/{1}.jsp" />
+  </definition>
+  
+  <definition name="product.*" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/views/product/{1}.jsp" />
+    <put-attribute name="remote" value="/WEB-INF/views/inc/remote/remote.jsp" />
+  </definition>
+  
+  <definition name="feedback.*" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/views/feedback/{1}.jsp" />
+    <put-attribute name="remote" value="/WEB-INF/views/inc/remote/remote.jsp" />
+  </definition>
+  
+  <definition name="error.*" extends="baseTemplate">
+    <put-attribute name="body" value="/WEB-INF/views/error/{1}.jsp" />
+  </definition>
+  
+</tiles-definitions>
